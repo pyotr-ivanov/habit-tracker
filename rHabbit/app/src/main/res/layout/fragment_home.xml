@@ -7,16 +7,136 @@
     tools:context=".ui.home.HomeFragment">
 
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
+        android:id="@+id/lbHabit1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:text="Habit 1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/lbHabits"
+        app:layout_constraintTop_toBottomOf="@+id/lbHabits"
+        tools:text="lbHabit1" />
+
+    <TextView
+        android:id="@+id/lbHabits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Habits"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="lbHabits" />
+
+    <TextView
+        android:id="@+id/lbGoalHabit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="30"
         android:textAlignment="center"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pbHabit1"
+        app:layout_constraintEnd_toEndOf="@+id/pbHabit1" />
+
+    <TextView
+        android:id="@+id/lbProgressHabit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/pbHabit1"
+        app:layout_constraintTop_toBottomOf="@+id/pbHabit1" />
+
+    <Button
+        android:id="@+id/btAddHabit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/pbHabit1"
+        app:layout_constraintTop_toBottomOf="@+id/pbHabit1" />
+
+    <TextView
+        android:id="@+id/lbHabit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="Habit 2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lbHabit1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lbHabit1"
+        app:layout_constraintTop_toBottomOf="@+id/lbHabit1"
+        tools:text="lbHabit2" />
+
+    <ProgressBar
+        android:id="@+id/pbHabit2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="280dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:max="60"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="@+id/lbHabit2"
+        app:layout_constraintTop_toBottomOf="@+id/lbHabit2" />
+
+    <TextView
+        android:id="@+id/lbGoalHabit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="60"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pbHabit2"
+        app:layout_constraintEnd_toEndOf="@+id/pbHabit2" />
+
+    <TextView
+        android:id="@+id/lbProgressHabit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/pbHabit2"
+        app:layout_constraintTop_toBottomOf="@+id/pbHabit2" />
+
+    <Button
+        android:id="@+id/btAggHabit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/pbHabit2"
+        app:layout_constraintTop_toBottomOf="@+id/pbHabit2" />
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_width="180dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="64dp"
+        android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:text="btReset" />
+
+    <ProgressBar
+        android:id="@+id/pbHabit1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="280dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:max="30"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="@+id/lbHabit1"
+        app:layout_constraintTop_toBottomOf="@+id/lbHabit1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
